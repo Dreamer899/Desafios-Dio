@@ -7,8 +7,8 @@ mkdir /sec
 echo "criando grupos de usuarios"
 
 groupadd GRP_ADM
-groupadd   GRP_VEN
-groupadd -G GRP_SEC
+groupadd GRP_VEN
+groupadd GRP_SEC
 
 echo "criando usuarios"
 useradd User1 -m -s /bin/bash -p $(openssl passwd -crypt senha123) -G GRP_ADM
